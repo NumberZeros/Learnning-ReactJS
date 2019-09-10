@@ -1,0 +1,4 @@
+.Todo-Complete{
+    text-decoration: line-through;
+    opacity: .3;
+}

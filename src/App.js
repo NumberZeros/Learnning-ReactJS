@@ -7,21 +7,17 @@ class App extends React.Component {
   constructor() {
     super();
     this.todoItems =[
-      { title: 'Mua Cải', iscomplete: true },
-      { title: 'Mua Hành' },
-      { title: 'Mua Hẹ' }
+      // { title: 'Mua Cải', iscomplete: true },
+      // { title: 'Mua Hành' },
+      // { title: 'Mua Hẹ' }
     ]
   }
 
   render() {
-    return (
-      <div className="TodoItem">
-        {
-          this.todoItems.map((item,index)=><TodoItem key={index} value={item} />)
-        }
+    return <div className="TodoItem">
+        {this.todoItems.length>0 && this.todoItems.map((item,index)=>(<TodoItem key={index} value={item} />))}
+        {this.todoItems.length ===0 && <div> Nothing Item</div>}
       </div>
-    );
-
   }
 }
 
