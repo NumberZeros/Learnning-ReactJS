@@ -1,11 +1,8 @@
 .App {
   text-align: center;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+  border: 2px solid silver;
+  padding: 10px 30 px;
+  flex-direction: column;
 }
 
 .App-header {
@@ -19,9 +16,6 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
 
 @keyframes App-logo-spin {
   from {

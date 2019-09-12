@@ -2,3 +2,32 @@
     text-decoration: line-through;
     opacity: .3;
 }
+
+.TodoItem{
+    border: 1px solid black;
+    font-size: 25px;
+    margin: 10px 30px;
+    overflow: auto;
+}
+
+.icon{
+    margin-left: 3%;
+    margin-top: 2%;
+    width: 10%;
+    display: inline-block;
+    float: left;
+}
+
+.TodoItem.p{
+    padding-top: 5%;
+}
+
+.into{
+    font-size: 250%;
+    margin: 3% 0%;
+    border: 0px;
+}
+
+.into:focus{
+    outline: none;
+}
