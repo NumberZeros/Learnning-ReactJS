@@ -72,16 +72,6 @@ class App extends React.Component {
     })
   }
 
-  // SelectAll(){
-  //   const {todoItems, newitem} =this.state;
-  //   for(let item in todoItems){
-  //     const iscomplete = todoItems[i].iscomplete;
-  //     this.setState({
-
-  //   }
-
-  // }
-
   render() {
     const { todoItems, newitem } = this.state;
 
@@ -90,7 +80,7 @@ class App extends React.Component {
       return (
         <div className="App">
           <div className="header">
-            <img onClick={this.SelectAll} src={CheckList} className="icon"></img>
+            <img  src={CheckList} className="icon"></img>
             <input className="into" type="text" onKeyUp={this.TextChange} value={newitem} onChange={this.onChange}
             >
             </input>
